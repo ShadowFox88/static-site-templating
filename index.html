@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="src/templating.js" type="module"></script>
+        <slot name="title"></slot>
+    </head>
+
+    <body>
+        <template id="title">
+            <title>Document</title>
+        </template>
+
+        <template id="content">
+            <h1>Title</h1>
+        </template>
+
+        <slot name="content"></slot>
+    </body>
+
+</html>
